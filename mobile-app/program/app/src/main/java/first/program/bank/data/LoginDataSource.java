@@ -11,8 +11,7 @@ public class LoginDataSource {
 
 
     DatabaseHelper mDatabaseHelper;
-    private Button btnAdd, btnViewData;
-    private EditText edittext;
+
     public Result<LoggedInUser> login(String username, String password) {
 
         try {
