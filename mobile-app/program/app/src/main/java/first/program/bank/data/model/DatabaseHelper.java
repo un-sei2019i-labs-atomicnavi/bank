@@ -1,8 +1,11 @@
 package first.program.bank.data.model;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.nfc.Tag;
+import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -25,5 +28,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
          db.execSQL("DROP TABLE if EXISTS "+ TABLE_NAME);
          onCreate(db);
     }
-    pu
+    public boolean addData(String nombre,String cedula,String clave,String cuenta){
+     SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_01,nombre);
+        contentValues.put(COL_02,cedula);
+        contentValues.put(COL_03,clave);
+        contentValues.put(COL_04,cuenta);
+        Log.d(nombre , "addData: Adding" + nombre + "to "+ TABLE_NAME);
+        long result = db.insert(TABLE_NAME,null,contentValues);
+
+        if(result == -1){
+            return false;
+        }else{
+            return true;
+        }
+
+    }
 }

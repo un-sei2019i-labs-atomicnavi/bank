@@ -16,6 +16,7 @@ public class LoginRepository {
     // @see https://developer.android.com/training/articles/keystore
     private LoggedInUser user = null;
 
+    DatabaseHelper mDatabaseHelper;
     // private constructor : singleton access
     private LoginRepository(LoginDataSource dataSource) {
         this.dataSource = dataSource;

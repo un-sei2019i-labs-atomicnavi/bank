@@ -10,8 +10,6 @@ import java.io.IOException;
 public class LoginDataSource {
 
 
-    DatabaseHelper mDatabaseHelper;
-
     public Result<LoggedInUser> login(String username, String password) {
 
         try {
