@@ -2,6 +2,7 @@ package first.program.bank1;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -34,6 +35,13 @@ public class database extends SQLiteOpenHelper {
         }else{
             return true;
         }
-
     };
+    // verifica si existe el usuario
+    public boolean chckuser( String username){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from user where username=?",new String[]{username});
+        if(cursor.getCount()>0)return false;
+        else return true;
+
+    }
 }
