@@ -8,6 +8,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    database db;
     EditText user,password,cpass;
     Button register;
     @Override
