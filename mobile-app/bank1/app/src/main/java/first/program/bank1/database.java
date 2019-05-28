@@ -44,4 +44,11 @@ public class database extends SQLiteOpenHelper {
         else return true;
 
     }
+    //verificacion de usuario y contrasena
+    public boolean chckpass(String username, String password){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from user where username=? and password=?",new String[]{username,password});
+        if(cursor.getCount()>0)return true;
+        else return false;
+    }
 }

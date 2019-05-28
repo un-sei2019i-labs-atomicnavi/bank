@@ -1,5 +1,6 @@
 package first.program.bank1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     database db;
     EditText user,password,cpass;
-    Button register;
+    Button register,login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText)findViewById(R.id.password);
         cpass = (EditText)findViewById(R.id.confirmpass);
         register = (Button)findViewById(R.id.register);
+        login =(Button)findViewById(R.id.login1);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,10 +44,17 @@ public class MainActivity extends AppCompatActivity {
                         }else{
                             Toast.makeText(getApplicationContext(),"usuario ya existe",Toast.LENGTH_SHORT).show();
                         }
+                    }else {
+                        Toast.makeText(getApplicationContext(), "contrasenas no conciden", Toast.LENGTH_SHORT).show();
                     }
-                    Toast.makeText(getApplicationContext(),"contrasenas no conciden",Toast.LENGTH_SHORT).show();
                 }
-
+            }
+        });
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, first.program.bank1.login.class);
+                startActivity(i);
             }
         });
     }
