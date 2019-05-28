@@ -10,23 +10,27 @@
         android:id="@+id/Username"
         android:layout_width="250dp"
         android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="83dp"
         android:layout_marginTop="206dp"
         android:layout_marginEnd="78dp"
         android:layout_marginBottom="455dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="username/account"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="98dp"
         android:layout_marginTop="313dp"
         android:layout_marginEnd="100dp"
@@ -43,6 +47,8 @@
         android:id="@+id/confirmpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="98dp"
         android:layout_marginTop="405dp"
         android:layout_marginEnd="100dp"
@@ -57,16 +63,34 @@
 
     <Button
         android:id="@+id/register"
-        android:layout_width="wrap_content"
+        android:layout_width="119dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="162dp"
         android:layout_marginTop="509dp"
-        android:layout_marginEnd="162dp"
+        android:layout_marginEnd="131dp"
         android:layout_marginBottom="174dp"
         android:text="register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/login1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/register"
+        android:layout_alignRight="@id/register"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="106dp"
+        android:text="login" />
 
 </RelativeLayout>
