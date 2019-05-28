@@ -30,9 +30,10 @@ public class login extends AppCompatActivity {
                 Boolean chkpass = db.chckpass(username,password);
                 if(chkpass){
                     //Toast.makeText(getApplicationContext(),"Login exitoso,",Toast.LENGTH_SHORT).show();
-
-                    Intent i = new Intent(login.this, maestros.class);
+                    Intent i = new Intent(getBaseContext(),s.class);
                     startActivity(i);
+
+
                 }else{
                     Toast.makeText(getApplicationContext(),"fallo del sistema el sistema se autodestruira en 15 segundos camilo es una hueva",Toast.LENGTH_SHORT).show();
                 }
