@@ -1,4 +1,4 @@
-package first.program.bank1;
+package first.program.bank1.presentation;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import first.program.bank1.R;
+import first.program.bank1.data_Acces.database.database;
 
 public class login extends AppCompatActivity {
 
@@ -30,7 +33,7 @@ public class login extends AppCompatActivity {
                 Boolean chkpass = db.chckpass(username,password);
                 if(chkpass){
                     //Toast.makeText(getApplicationContext(),"Login exitoso,",Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(getBaseContext(),s.class);
+                    Intent i = new Intent(getBaseContext(), s.class);
                     startActivity(i);
 
 

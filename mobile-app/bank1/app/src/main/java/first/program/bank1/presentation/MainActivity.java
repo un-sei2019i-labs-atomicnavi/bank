@@ -1,4 +1,4 @@
-package first.program.bank1;
+package first.program.bank1.presentation;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import first.program.bank1.R;
+import first.program.bank1.data_Acces.database.database;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, first.program.bank1.login.class);
+                Intent i = new Intent(MainActivity.this, first.program.bank1.presentation.login.class);
                 startActivity(i);
             }
         });

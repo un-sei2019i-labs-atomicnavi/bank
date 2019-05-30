@@ -1,8 +1,10 @@
-package first.program.bank1;
+package first.program.bank1.presentation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import first.program.bank1.R;
 
 public class s extends AppCompatActivity {
 
