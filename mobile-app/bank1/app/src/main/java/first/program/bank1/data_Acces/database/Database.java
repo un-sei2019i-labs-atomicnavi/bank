@@ -6,8 +6,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class database extends SQLiteOpenHelper {
-    public database(Context context) {
+public class Database extends SQLiteOpenHelper {
+    public static final String NAME = "Database";
+    public static final int VERSION = 1;
+
+    public Database(Context context) {
         super(context, "BANK.db", null, 1);
     }
 
