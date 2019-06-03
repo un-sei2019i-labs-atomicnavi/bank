@@ -1,10 +1,23 @@
 package first.program.bank1.data_Acces.models;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
+@DatabaseTable(tableName = "User")
 public class User  {
-    String name;
-    int cedula;
-    int password;
-    int account;
+
+    @DatabaseField(allowGeneratedIdInsert = true)
+    private int cedula;//primary key
+    @DatabaseField(index = true, canBeNull = false)
+    private String name;
+    @DatabaseField
+    private int password;
+    @DatabaseField
+    private int account;
+
+    public User(){
+
+    }
 
     public User(String name,int cedula,int password,int acont) {
 
