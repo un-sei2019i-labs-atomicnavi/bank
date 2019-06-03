@@ -11,17 +11,26 @@ public class database extends SQLiteOpenHelper {
         super(context, "BANK.db", null, 1);
     }
 
+    //crea la tabla de usuarios
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("Create table user(username text primary key, password text)");
+        db.execSQL("Create table User(username text,cedula int primary key, password text,account int )");
+        db.execSQL("Create table Account(Account int primary key, Balance int)");
+        db.execSQL("Create table Administrator(username text,cedula int primary key, password text)");
+        db.execSQL("Create table Transactions(fecha date ,id int primary key, ammount int,accountIn int,accountOut int )");
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("drop table if exists user");
+        db.execSQL("drop table if exists User");
+        db.execSQL("drop table if exists Account");
+        db.execSQL("drop table if exists Administrator");
+        db.execSQL("drop table if exists Transactions");
 
     }
+
     // agrega a la base de datos
 
     public boolean insert(String username,String password){
