@@ -1,66 +1,75 @@
 package first.program.bank1.data_Acces.database;
 
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
-public class Database extends SQLiteOpenHelper {
-    public static final String NAME = "Database";
-    public static final int VERSION = 1;
+import android.content.Context;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
+import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.dao.RuntimeExceptionDao;
+import com.j256.ormlite.support.ConnectionSource;
+import com.j256.ormlite.table.TableUtils;
+
+import first.program.bank1.data_Acces.models.User;
+
+public class Database extends OrmLiteSqliteOpenHelper {
+
+    public static final String DATABASE_NAME = "bank.db";
+    public static final int DATABASE_VERSION = 1;
+
+    private Dao<User, Integer> UserDAO = null;
+    private RuntimeExceptionDao<User,Integer>UserRuntimeDAO = null;
 
     public Database(Context context) {
-        super(context, "BANK.db", null, 1);
+        super(context,DATABASE_NAME,null,DATABASE_VERSION);
     }
-
-    //crea la tabla de usuarios
     @Override
-    public void onCreate(SQLiteDatabase db) {
-
-        db.execSQL("Create table User(username text,cedula int primary key, password text,account int )");
-        db.execSQL("Create table Account(Account int primary key, Balance int)");
-        db.execSQL("Create table Administrator(username text,cedula int primary key, password text)");
-        db.execSQL("Create table Transactions(fecha date ,id int primary key, ammount int,accountIn int,accountOut int )");
-
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("drop table if exists User");
-        db.execSQL("drop table if exists Account");
-        db.execSQL("drop table if exists Administrator");
-        db.execSQL("drop table if exists Transactions");
-
-    }
-
-    // agrega a la base de datos
-
-    public boolean insert(String username,String password){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentvalues= new ContentValues();
-        contentvalues.put("username",username);
-        contentvalues.put("password",password);
-        long ver = db.insert("user",null,contentvalues);
-        if (ver==-1){
-            return false;
-        }else{
-            return true;
+    public void onCreate(SQLiteDatabase sqLiteDatabase, ConnectionSource connectionSource) {
+        try {
+            logger.info(Database.class.getSimpleName(), "onCreate");
+            TableUtils.clearTable(connectionSource, User.class);
+        }catch(SQLException | java.sql.SQLException ex){
+            logger.error(Database.class.getSimpleName(),"imposible crear base e datos",ex);
+            throw new RuntimeException(ex);
         }
-    };
-    // verifica si existe el usuario
-    public boolean chckuser( String username){
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("select * from user where username=?",new String[]{username});
-        if(cursor.getCount()>0)return false;
-        else return true;
-
     }
-    //verificacion de usuario y contrasena
-    public boolean chckpass(String username, String password){
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("select * from user where username=? and password=?",new String[]{username,password});
-        if(cursor.getCount()>0)return true;
-        else return false;
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, ConnectionSource connectionSource, int oldV, int newV) {
+       try {
+           logger.info(Database.class.getSimpleName(), "onUpgrade");
+           TableUtils.dropTable(connectionSource, User.class, true);
+           onCreate(db, connectionSource);
+       }catch(SQLException | java.sql.SQLException ex){
+           logger.error(Database.class.getSimpleName(),"imposible eliminar base e datos",ex);
+           throw new RuntimeException(ex);
+       }
+    }
+
+    public Dao<User, Integer> getUserDAO() throws java.sql.SQLException {
+        if(UserDAO==null)UserDAO = getDao(User.class);
+        return UserDAO;
+    }
+
+    public void setUserDAO(Dao<User, Integer> userDAO) {
+        UserDAO = userDAO;
+    }
+
+    public RuntimeExceptionDao<User, Integer> getUserRuntimeDAO() {
+        if(UserRuntimeDAO==null)UserRuntimeDAO = getRuntimeExceptionDao(User.class);
+        return UserRuntimeDAO;
+    }
+
+    public void setUserRuntimeDAO(RuntimeExceptionDao<User, Integer> userRuntimeDAO) {
+        UserRuntimeDAO = userRuntimeDAO;
+    }
+
+    @Override
+    public void close() {
+        super.close();
+        UserDAO = null;
+        UserRuntimeDAO = null;
+
     }
 }

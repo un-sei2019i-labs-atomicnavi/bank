@@ -9,18 +9,18 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import first.program.bank1.R;
-import first.program.bank1.data_Acces.database.Database;
+import first.program.bank1.data_Acces.database.Databasesin;
 
 public class MainActivity extends AppCompatActivity {
 
-    Database db;
+    Databasesin db;
     EditText user,password,cpass;
     Button register,login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        db = new Database(this);
+        db = new Databasesin(this);
         user=(EditText)findViewById(R.id.Username);
         password = (EditText)findViewById(R.id.password);
         cpass = (EditText)findViewById(R.id.confirmpass);

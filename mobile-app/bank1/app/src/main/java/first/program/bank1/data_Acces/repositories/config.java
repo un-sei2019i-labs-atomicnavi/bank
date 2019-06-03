@@ -1,4 +1,4 @@
-package first.program.bank1.data_Acces;
+package first.program.bank1.data_Acces.repositories;
 
 import com.j256.ormlite.android.apptools.OrmLiteConfigUtil;
 
