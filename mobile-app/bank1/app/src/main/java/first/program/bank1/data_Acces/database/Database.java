@@ -11,6 +11,8 @@ import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 
+import first.program.bank1.data_Acces.models.Account;
+import first.program.bank1.data_Acces.models.Transaction;
 import first.program.bank1.data_Acces.models.User;
 
 public class Database extends OrmLiteSqliteOpenHelper {
@@ -19,16 +21,26 @@ public class Database extends OrmLiteSqliteOpenHelper {
     public static final int DATABASE_VERSION = 1;
 
     private Dao<User, Integer> UserDAO = null;
-    private RuntimeExceptionDao<User,Integer>UserRuntimeDAO = null;
+    private Dao<Account,Integer> AccountDao = null;
+    private Dao<Transaction,Integer> TransactionDao = null;
+
+    private RuntimeExceptionDao<User,Integer> UserRuntimeDAO = null;
+    private RuntimeExceptionDao<Account,Integer> AccountRuntimeDAO = null;
+    private RuntimeExceptionDao<Transaction,Integer> TransactionRuntimeDAO = null;
+
 
     public Database(Context context) {
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
     }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase, ConnectionSource connectionSource) {
         try {
             logger.info(Database.class.getSimpleName(), "onCreate");
             TableUtils.clearTable(connectionSource, User.class);
+            TableUtils.clearTable(connectionSource, Account.class);
+            TableUtils.clearTable(connectionSource, Transaction.class);
+
         }catch(SQLException | java.sql.SQLException ex){
             logger.error(Database.class.getSimpleName(),"imposible crear base e datos",ex);
             throw new RuntimeException(ex);
@@ -40,9 +52,12 @@ public class Database extends OrmLiteSqliteOpenHelper {
        try {
            logger.info(Database.class.getSimpleName(), "onUpgrade");
            TableUtils.dropTable(connectionSource, User.class, true);
+           TableUtils.dropTable(connectionSource, Account.class, true);
+           TableUtils.dropTable(connectionSource, Transaction.class, true);
            onCreate(db, connectionSource);
+
        }catch(SQLException | java.sql.SQLException ex){
-           logger.error(Database.class.getSimpleName(),"imposible eliminar base e datos",ex);
+           logger.error(Database.class.getSimpleName(),"imposible eliminar base de datos",ex);
            throw new RuntimeException(ex);
        }
     }

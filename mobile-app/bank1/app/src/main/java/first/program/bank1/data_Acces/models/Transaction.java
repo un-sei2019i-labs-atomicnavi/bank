@@ -1,11 +1,20 @@
 package first.program.bank1.data_Acces.models;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
 import java.util.Date;
 
+@DatabaseTable(tableName = "transaction")
 public class Transaction{
+
+    @DatabaseField(generatedId = true)
     int id;
+    @DatabaseField(canBeNull = false)
     Date date;
+    @DatabaseField(canBeNull = false)
     int amount;
+
     public Transaction(int id,Date date,int ammount) {
         this.id=id;
         this.amount=ammount;
