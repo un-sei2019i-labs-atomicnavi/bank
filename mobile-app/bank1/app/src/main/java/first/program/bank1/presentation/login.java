@@ -7,16 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import first.program.bank1.R;
 import first.program.bank1.data_Acces.database.Database;
-import first.program.bank1.data_Acces.database.database;
 
 public class login extends AppCompatActivity {
 
     EditText Username,Password;
     Button login;
     Database db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
