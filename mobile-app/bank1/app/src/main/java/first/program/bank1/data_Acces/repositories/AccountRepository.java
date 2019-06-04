@@ -15,13 +15,13 @@ public class AccountRepository {
     }
 
 
-    public Boolean getAccountById(int user){
+    public User getAccountById(int user){
         if(Oba==null){
             Database db = Oba.getHelper();
             RuntimeExceptionDao<User,Integer> dao = db.getUserRuntimeDAO();
-            dao.queryForId(user);
-            return true;
-        }else return false;
+            User n = dao.queryForId(user);
+            return n;
+        }else return null;
     }
     public Boolean updateAccount(User user){
         if(Oba==null){
