@@ -17,6 +17,7 @@ import first.program.bank1.data_Acces.models.User;
 public class AccountRepository {
 
     private final OrmLiteBaseActivity<Database> Oba;
+    private int usuarioActual = 0;
 
     public AccountRepository(OrmLiteBaseActivity<Database> oba){
         this.Oba = oba;
@@ -31,6 +32,9 @@ public class AccountRepository {
 
     }
 
+    public void setUA(int a){
+        usuarioActual = a;
+    }
     public Boolean ChkUser(int id){
         if(Oba==null){
             Database db = Oba.getHelper();
@@ -46,6 +50,24 @@ public class AccountRepository {
             if(dao.idExists(id))return dao.queryForId(id).getPassword()==pass;
         } return false;
     }
+
+    public String[] SA(){
+        if(Oba==null){
+            Database db = Oba.getHelper();
+            RuntimeExceptionDao<User,Integer> dao = db.getUserRuntimeDAO();
+            RuntimeExceptionDao<Account,Integer> daoA = db.getAccountRuntimeDAO();
+
+            User n = dao.queryForId(usuarioActual);
+            String[] s1=new String[4];
+            s1[0] = "Name"+n.getName();
+            s1[1] = "Cedula"+Integer.toString(n.getCedula());
+            s1[2] = "Account"+Integer.toString(n.getAccount());
+            s1[3] = "Balance"+Integer.toString(daoA.queryForId(n.getAccount()).getBalance());
+
+            return s1;
+        }else return null;
+
+}
     public User getUserById(int user){
         if(Oba==null){
             Database db = Oba.getHelper();

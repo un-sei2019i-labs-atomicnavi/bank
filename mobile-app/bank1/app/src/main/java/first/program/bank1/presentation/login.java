@@ -41,8 +41,7 @@ public class login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Login exitoso,",Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(getBaseContext(), s.class);
                     startActivity(i);
-
-
+                    dbq.setUA(username);
                 }else{
                     Toast.makeText(getApplicationContext(),"fallo del sistema corrija nombre de usuario o contrasena",Toast.LENGTH_SHORT).show();
                 }
