@@ -32,7 +32,7 @@ public class SendMoney extends AppCompatActivity {
                 int reg3 = Integer.parseInt(Amm.getText().toString());
                 if (dbq.createTransaction(reg2,dbq.getUA(),reg3)){
                     Toast.makeText(getApplicationContext(),"transaccion exitosa ",Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(getBaseContext(), s.class);
+                    Intent i = new Intent(getBaseContext(), success.class);
                     startActivity(i);
                 }else{
                     Toast.makeText(getApplicationContext(),"Fallo transaccion",Toast.LENGTH_SHORT).show();
