@@ -30,7 +30,7 @@ public class login extends AppCompatActivity {
             public void onClick(View v) {
                 String username = Username.getText().toString();
                 String password = Password.getText().toString();
-                Boolean chkpass = db.getUserDAO(username,password).;
+                Boolean chkpass = db.getUserDAO(username,password);
                 if(chkpass){
                     //Toast.makeText(getApplicationContext(),"Login exitoso,",Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(getBaseContext(), s.class);
