@@ -62,7 +62,6 @@ public class Database extends OrmLiteSqliteOpenHelper {
        }
     }
 
-    //metodos de user
     public Dao<User, Integer> getUserDAO() throws java.sql.SQLException {
         if(UserDAO==null)UserDAO = getDao(User.class);
         return UserDAO;
@@ -80,51 +79,11 @@ public class Database extends OrmLiteSqliteOpenHelper {
     public void setUserRuntimeDAO(RuntimeExceptionDao<User, Integer> userRuntimeDAO) {
         UserRuntimeDAO = userRuntimeDAO;
     }
-    //metodos de account
-    public Dao<Account, Integer> getAccountDAO() throws java.sql.SQLException {
-        if(AccountDao==null)AccountDao = getDao(Account.class);
-        return AccountDao;
-    }
-
-    public void setAccountDAO(Dao<Account, Integer> AcountDAO) {
-        AccountDao = AcountDAO;
-    }
-
-    public RuntimeExceptionDao<Account, Integer> getAccountRuntimeDAO() {
-        if(AccountRuntimeDAO==null)AccountRuntimeDAO = getRuntimeExceptionDao(Account.class);
-        return AccountRuntimeDAO;
-    }
-
-    public void setAccountRuntimeDAO(RuntimeExceptionDao<Account, Integer> sAccountRuntimeDAO) {
-        AccountRuntimeDAO = sAccountRuntimeDAO;
-    }
-    //metodos de transaction
-    public Dao<Transaction, Integer> getTransactionDAO() throws java.sql.SQLException {
-        if(TransactionDao==null)TransactionDao = getDao(Transaction.class);
-        return TransactionDao;
-    }
-
-    public void setTransactionDAO(Dao<Transaction, Integer> TransactionDAO) {
-        TransactionDao = TransactionDAO;
-    }
-
-    public RuntimeExceptionDao<Transaction, Integer> getTransactionRuntimeDAO() {
-        if(TransactionRuntimeDAO==null)TransactionRuntimeDAO = getRuntimeExceptionDao(Transaction.class);
-        return TransactionRuntimeDAO;
-    }
-
-    public void setTransactionRuntimeDAO(RuntimeExceptionDao<Transaction, Integer> sTransactionRuntimeDAO) {
-        TransactionRuntimeDAO = sTransactionRuntimeDAO;
-    }
 
     @Override
     public void close() {
         super.close();
         UserDAO = null;
-        AccountDao=null;
-        TransactionDao=null;
-        TransactionRuntimeDAO=null;
-        AccountRuntimeDAO=null;
         UserRuntimeDAO = null;
 
     }

@@ -14,6 +14,11 @@ public class User  {
     private int password;
     @DatabaseField
     private int account;
+
+    public User(){
+
+    }
+
     public User(String name,int cedula,int password,int acont) {
 
         this.name=name;
