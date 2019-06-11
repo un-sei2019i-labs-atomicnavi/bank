@@ -1,0 +1,166 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\6632f7e00fb41cf692059b658148d8d4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\0ae5445d5d75e8104435e17432987920\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\9a6c9b56174765bff304e9e376c35f0a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\a2bf2f2f88c77e8c54751caf6a542a8c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\5ad01ffb5b615528ab3677c8cfa93c75\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\0fa102140d1d3e48d586fb67888d0d09\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\488a398e43c6ba7b96aa85ac9dd89827\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\d8cd1ac59f6b02594b0c11a579c42d49\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\dc531e700771295234e2ce8b0755ea80\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\9dc409993a0000780a573f74418667c1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\74e6112fc1dab4e3d98509890160d7a5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\29776418347886f4dce8e9837f7c0065\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\50769183351c0f1ba9ae099ef9337d33\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\2422609f6f07a6b93c2817356db757e1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\eefe7bd0a92f2a5ba1d613a3f64c7b86\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\736e556620d1acb86ed9fab06686ea11\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\2926fea2893739694eea44915e917e38\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\6684188c5bcd8de24befcfd28755aed1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\ddd317868c69de6a31b046e65eec52ce\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\3840a6414281f0ca794f229f51ec8834\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\1c5ec265047cf98781a922766dd2b5f3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\3e2be5ea9e71a08a4e106152d118ebb1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\73c9b5ffb45ab0cc21afe5b4cdb306c2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\81bc1609be62cf1830ebfed606a13640\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\558a74fc399d84009fa9c75aad462b06\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\cc34d26b14c4955853c3f83a4989737f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\92b0833815c21f9a28be5e2327018d6a\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\0ae5445d5d75e8104435e17432987920\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\0ae5445d5d75e8104435e17432987920\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\736e556620d1acb86ed9fab06686ea11\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\736e556620d1acb86ed9fab06686ea11\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\2926fea2893739694eea44915e917e38\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\2926fea2893739694eea44915e917e38\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\736e556620d1acb86ed9fab06686ea11\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:11:9-40
+activity#first.program.bank1.presentation.s
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:12:9-61
+	android:name
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:12:19-49
+activity#first.program.bank1.presentation.login
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:13:9-56
+	android:name
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:13:19-53
+activity#first.program.bank1.presentation.MainActivity
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:14:19-60
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:18:27-74
+activity#first.program.bank1.data_Acces.repositories.AccountRepository
+ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:21:9-79
+	android:name
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml:21:19-76
+uses-sdk
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\6632f7e00fb41cf692059b658148d8d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\6632f7e00fb41cf692059b658148d8d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\0ae5445d5d75e8104435e17432987920\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\0ae5445d5d75e8104435e17432987920\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\9a6c9b56174765bff304e9e376c35f0a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\9a6c9b56174765bff304e9e376c35f0a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\a2bf2f2f88c77e8c54751caf6a542a8c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\a2bf2f2f88c77e8c54751caf6a542a8c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\5ad01ffb5b615528ab3677c8cfa93c75\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\5ad01ffb5b615528ab3677c8cfa93c75\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\0fa102140d1d3e48d586fb67888d0d09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\0fa102140d1d3e48d586fb67888d0d09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\488a398e43c6ba7b96aa85ac9dd89827\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\488a398e43c6ba7b96aa85ac9dd89827\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\d8cd1ac59f6b02594b0c11a579c42d49\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\d8cd1ac59f6b02594b0c11a579c42d49\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\dc531e700771295234e2ce8b0755ea80\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\dc531e700771295234e2ce8b0755ea80\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\9dc409993a0000780a573f74418667c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\9dc409993a0000780a573f74418667c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\74e6112fc1dab4e3d98509890160d7a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\74e6112fc1dab4e3d98509890160d7a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\29776418347886f4dce8e9837f7c0065\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\29776418347886f4dce8e9837f7c0065\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\50769183351c0f1ba9ae099ef9337d33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\50769183351c0f1ba9ae099ef9337d33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\2422609f6f07a6b93c2817356db757e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\2422609f6f07a6b93c2817356db757e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\eefe7bd0a92f2a5ba1d613a3f64c7b86\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\eefe7bd0a92f2a5ba1d613a3f64c7b86\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\736e556620d1acb86ed9fab06686ea11\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\736e556620d1acb86ed9fab06686ea11\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\2926fea2893739694eea44915e917e38\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\2926fea2893739694eea44915e917e38\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\6684188c5bcd8de24befcfd28755aed1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\6684188c5bcd8de24befcfd28755aed1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\ddd317868c69de6a31b046e65eec52ce\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\ddd317868c69de6a31b046e65eec52ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\3840a6414281f0ca794f229f51ec8834\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\3840a6414281f0ca794f229f51ec8834\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\1c5ec265047cf98781a922766dd2b5f3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\1c5ec265047cf98781a922766dd2b5f3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\3e2be5ea9e71a08a4e106152d118ebb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\3e2be5ea9e71a08a4e106152d118ebb1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\73c9b5ffb45ab0cc21afe5b4cdb306c2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\73c9b5ffb45ab0cc21afe5b4cdb306c2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\81bc1609be62cf1830ebfed606a13640\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\81bc1609be62cf1830ebfed606a13640\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\558a74fc399d84009fa9c75aad462b06\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\558a74fc399d84009fa9c75aad462b06\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\cc34d26b14c4955853c3f83a4989737f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\cc34d26b14c4955853c3f83a4989737f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\92b0833815c21f9a28be5e2327018d6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sebastiano210\.gradle\caches\transforms-2\files-2.1\92b0833815c21f9a28be5e2327018d6a\AndroidManifest.xml:20:5-44
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+		ADDED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ingesoft\bank\bank\mobile-app\bank1\app\src\main\AndroidManifest.xml
