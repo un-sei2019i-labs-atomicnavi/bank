@@ -14,8 +14,8 @@ public class s extends AppCompatActivity {
         setContentView(R.layout.activity_s);
 
 
-            //ImageView myImageView = (ImageView) findViewById(R.id.imageView);
-            //myImageView.setImageResource(R.drawable.a1);
+            ImageView myImageView = (ImageView) findViewById(R.id.imageView);
+            myImageView.setImageResource(R.drawable.a1);
 
     }
 

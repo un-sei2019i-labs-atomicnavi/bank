@@ -11,6 +11,7 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="83dp"
         android:layout_marginTop="206dp"
@@ -92,5 +93,19 @@
         android:layout_marginRight="19dp"
         android:layout_marginBottom="106dp"
         android:text="login" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="576dp"
+        android:ems="10"
+        android:hint="C.C. or Nit"
+        android:inputType="number" />
 
 </RelativeLayout>

@@ -26,7 +26,7 @@
         android:layout_marginStart="99dp"
         android:layout_marginTop="170dp"
         android:ems="10"
-        android:hint="C.C."
+        android:hint="userName"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

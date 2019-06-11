@@ -21,6 +21,11 @@ public class Transaction{
         this.date=date;
 
     }
+    public Transaction(Date date,int ammount) {
+        this.amount=ammount;
+        this.date=date;
+
+    }
 
     public Date getDate() {
         return date;
