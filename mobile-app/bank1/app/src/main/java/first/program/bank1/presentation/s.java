@@ -17,12 +17,13 @@ import first.program.bank1.data_Acces.repositories.AccountRepository;
 public class s extends AppCompatActivity {
 
     AccountRepository dbq;
-
+    Database db;
     Button enviar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s);
+        db = new Database(this);
         cargar();
         enviar =(Button)findViewById(R.id.ss);
         enviar.setOnClickListener(new View.OnClickListener() {

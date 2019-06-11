@@ -35,6 +35,9 @@ public class AccountRepository {
     public void setUA(int a){
         usuarioActual = a;
     }
+    public int getUA(){
+        return usuarioActual;
+    }
     public Boolean ChkUser(int id){
         if(Oba==null){
             Database db = Oba.getHelper();
